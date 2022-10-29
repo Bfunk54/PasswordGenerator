@@ -10,7 +10,9 @@ All sections will resize to any size screen you are using and will still work an
 
 #
 ## Link to the site:
-https://bfunk54.github.io/UCF-homework/
+[Deployed Site](https://github.com/Bfunk54/homework_03)
+
+[Github Repo](https://bfunk54.github.io/homework_03/)
 
 
 
