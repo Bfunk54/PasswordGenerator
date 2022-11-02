@@ -20,6 +20,6 @@ All sections will resize to any size screen you are using and will still work an
 ## Preview
 #
 
-![](./02-Challenge/Assets/Screen%20Shot%202022-10-05%20at%2010.21.53%20AM%20(2).png)
+![](./assets/images/Screen%20Shot%202022-10-05%20at%2010.21.53%20AM%20(2).png)
 
-![](./02-Challenge/Assets/Screen%20Shot%202022-10-05%20at%2010.22.01%20AM%20(2).png)
+![](./assets/images/Screen%20Shot%202022-10-05%20at%2010.22.01%20AM%20(2).png)
