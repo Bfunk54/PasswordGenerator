@@ -14,12 +14,11 @@ let numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 let specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '=', '+', '[', ']', '{', '}', ';', ':', '<', '>', ',', '.', '?', '/', '|', '`', '~'];
 
 // Write password to the #password input
-function writePassword() {
+function writePassword(pass) {
   let passwordText = document.querySelector("#password");
+  // Clear the old password if there is one before writing a new one on the page
   passwordText.value = '';
-
-  passwordText.value = thePass.value;
-
+  passwordText.value = pass;
 }
 
 // Function checking for which options the user has selected
@@ -30,7 +29,7 @@ function passwordOptions() {
 		alert('Please try for a password between 8 and 128 characters');
 		return;
 	}
-	// As long as it's not, run the switch to figure out which options the user has selected
+	// As long as it's not, run the switch to figure out which options the user has selected and send the right letter arrays through
 	else {
 	switch (true) {
 		case passLower.checked && passUpper.checked && passNumber.checked && passSymbols.checked: pass = lowercaseLetters.concat(uppercaseLetters, numbers, specialCharacters); console.log(pass); createPassword(pass);
@@ -72,6 +71,7 @@ function passwordOptions() {
 function createPassword(pass) {
 	console.log(pass);
 	let password = '';
+	// Loop the desired password length using random characters from the selected arrays
 	for (let i = 0; i < passLength.value; i++) {
 		let random = Math.floor(Math.random() * pass.length);
 		password += pass[random];
