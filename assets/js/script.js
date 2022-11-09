@@ -14,7 +14,7 @@ let specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', 
 
 // Write password to the #password input
 function writePassword() {
-  let password = generatePassword();
+  let password = createPassword();
   let passwordText = document.querySelector("#password");
 
   passwordText.value = password;
@@ -22,7 +22,39 @@ function writePassword() {
 }
 
 function createPassword() {
+	switch (true) {
+		case passLower.checked && passUpper.checked && passNumber.checked && passSymbols.checked:
+			break;
+		case passLower.checked && passUpper.checked && passNumber.checked:
+			break;
+		case passLower.checked && passUpper.checked && passSymbols.checked:
+			break;
+		case passLower.checked && passNumber.checked && passSymbols.checked:
+			break;
+		case passUpper.checked && passNumber.checked && passSymbols.checked:
+			break;
+		case passLower.checked && passUpper.checked:
+			break;
+		case passLower.checked && passNumber.checked:
+			break;
+		case passLower.checked && passSymbols.checked:
+			break;
+		case passUpper.checked && passNumber.checked:
+			break;
+		case passUpper.checked && passSymbols.checked:
+			break;
+		case passNumber.checked && passSymbols.checked:
+			break;
+		case passLower.checked:
+			break;
+		case passUpper.checked:
+			break;
+		case passNumber.checked:
+			break;
+		case passSymbols.checked:
+			break;
+		default: alert('Please select at least one character type.');
+	}
 }
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
