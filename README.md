@@ -10,9 +10,9 @@ All sections will resize to any size screen you are using and will still work an
 
 #
 ## Link to the site:
-[Deployed Site](https://github.com/Bfunk54/homework_03)
+[Deployed Site](https://github.com/Bfunk54/PasswordGenerator)
 
-[Github Repo](https://bfunk54.github.io/homework_03/)
+[Github Repo](https://bfunk54.github.io/PasswordGenerator/)
 
 
 
