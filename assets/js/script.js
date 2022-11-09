@@ -18,7 +18,7 @@ function writePassword() {
   let password = createPassword();
   let passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  passwordText.value = thePass.value;
 
 }
 
@@ -70,6 +70,10 @@ function passwordOptions() {
 
 // Use the selected options to create the password
 function createPassword(pass) {
+	for (let i = 0; i < passLength.value; i++) {
+		let random = Math.floor(Math.random() * pass.length);
+		thePass.value += pass[random];
+	}
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
