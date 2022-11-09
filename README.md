@@ -4,7 +4,7 @@
   
 #   
 
-This website is very basic and has checkboxes for the different parameters for the password as well as a setting for the length which goes from 4 to 20 characters. To use, just set the parameters to your liking and press the "Generate Password" button.
+This website is very basic and has checkboxes for the different parameters for the password as well as a setting for the length which goes from 8 to 128 characters. To use, just set the parameters to your liking and press the "Generate Password" button.
 
 All sections will resize to any size screen you are using and will still work and look good.
 
