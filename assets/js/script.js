@@ -15,8 +15,8 @@ let specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', 
 
 // Write password to the #password input
 function writePassword() {
-  let password = createPassword();
   let passwordText = document.querySelector("#password");
+  passwordText.value = '';
 
   passwordText.value = thePass.value;
 
@@ -33,7 +33,7 @@ function passwordOptions() {
 	// As long as it's not, run the switch to figure out which options the user has selected
 	else {
 	switch (true) {
-		case passLower.checked && passUpper.checked && passNumber.checked && passSymbols.checked: pass = lowercaseLetters.concat(uppercaseLetters, numbers, specialCharacters); createPassword(pass);
+		case passLower.checked && passUpper.checked && passNumber.checked && passSymbols.checked: pass = lowercaseLetters.concat(uppercaseLetters, numbers, specialCharacters); console.log(pass); createPassword(pass);
 			break;
 		case passLower.checked && passUpper.checked && passNumber.checked: pass = lowercaseLetters.concat(uppercaseLetters, numbers); createPassword(pass);
 			break;
@@ -70,10 +70,13 @@ function passwordOptions() {
 
 // Use the selected options to create the password
 function createPassword(pass) {
+	console.log(pass);
+	let password = '';
 	for (let i = 0; i < passLength.value; i++) {
 		let random = Math.floor(Math.random() * pass.length);
-		thePass.value += pass[random];
+		password += pass[random];
 	}
+	writePassword(password);
 }
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", passwordOptions);
