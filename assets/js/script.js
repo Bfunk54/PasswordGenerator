@@ -1,5 +1,11 @@
 // Assignment Code
 let generateBtn = document.querySelector("#generate");
+let passLength = document.getElementById('length');
+let passLower = document.getElementById('lowercase');
+let passUpper = document.getElementById('uppercase');
+let passNumber = document.getElementById('numbers');
+let passSymbols = document.getElementById('symbols');
+let thePass = document.getElementById('password');
 
 let lowercaseLetters = ['a', 'b' , 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 let uppercaseLetters = ['A', 'B' , 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
