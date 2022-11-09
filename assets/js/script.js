@@ -24,8 +24,9 @@ function writePassword(pass) {
 // Function checking for which options the user has selected
 function passwordOptions() {
 	let pass = [];
+	console.log(passLength.value);
 	// Check if the password is less than 8 or more than 128 characters
-	if (passLength < 8 || passLength > 128) {
+	if (passLength.value < 8 || passLength.value > 128) {
 		alert('Please try for a password between 8 and 128 characters');
 		return;
 	}
